@@ -1,0 +1,245 @@
+/*
+Paleta de Colores:
+#EBCF62 #E05142 #4BC4C8 #2A6350 #000000
+*/
+/*Letras */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+/*Títulos Poppins / font-family: 'Poppins', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+/*Subtítulos Oswald / font-family: 'Oswald', sans-serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@200&display=swap');
+/*Texto Advent Pro Light / font-family: 'Advent Pro', sans-serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+/*Slogan font-family: 'Rubik Glitch', cursive;*/
+/*Letras */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', 'Sans serif';
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    
+}
+
+.bg{
+    width: 100%;
+    height: 98vh;
+    background: #000;
+    position: relative;
+    overflow: hidden;
+}
+
+.header_nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.header_nav .contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.header_nav h1{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+}
+
+.color_texto {
+    display: inline-block;
+    position: relative;
+}
+.color_texto:hover {
+    transition: all 2s linear;
+    transform: rotate(360deg);
+}
+#D {
+    color: #1ad917;
+}
+#I {
+    color: #EBCF62;
+}
+#E {
+    color:  #4BC4C8;
+}
+#R {
+    color: #E05142;
+}
+.header_nav nav a{
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+}
+.animacion {
+    display: inline-block;
+}
+.animacion:hover {
+    transform: translateY(-3px);
+    transition: all .2s linear;
+}
+#verde:hover{
+    color: #000;
+    border-radius: 5px;
+    background-color: #1ad917;
+}
+#amarillo:hover{
+    color: #000;
+    border-radius: 5px;
+    background-color: #fae316;
+}
+#azul:hover{
+    color: #000;
+    border-radius: 5px;
+    background-color: #4BC4C8;
+}
+#naranja:hover{
+    color: #000;
+    border-radius: 5px;
+    background-color: #E05142;
+}
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.banner_fig{
+    margin: 0px auto;
+    padding: 0px;
+    top: -5px;
+}
+.banner_img{
+    animation: movimiento 6s linear infinite;
+}
+
+.banner_img img{
+    width: 800px;
+    display: block;
+}
+
+@keyframes movimiento{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+footer {
+    display: flex;
+    
+    justify-content: space-between;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+.color_forma{
+    width: 25%;
+    height: 2vh;
+    background-color: rgb(0, 0, 0);
+    display: inline-block;
+    
+}
+#v {
+    background-color: #1ad917;
+}
+#a {
+    background-color: #fae316;
+}
+#z {
+    background-color: #4BC4C8;
+}
+#n {
+    background-color: #E05142;
+}
+
+/*Conóceme .*/
+.contacto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    top: -10%;
+    left: 5%;
+    width: 50%;
+    z-index: 0;
+}
+
+.contacto h1{
+    color: #fff;
+    font-size: 32px;
+    font-family: 'Poppins', sans-serif;
+}
+.contacto h3{
+    color: #fff;
+    font-size: 22px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 100;
+}
+.contacto p{
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Advent Pro', sans-serif;
+    font-weight: 400;
+    text-align: justify;
+    text-decoration: none;
+}
+.contacto a{
+
+    text-decoration: none;
+}
+.ReSo {
+    width: 9%;
+    margin: 10px 0px 10px 10px;
+    padding: 0px;
+    position: relative;
+    display: inline-block;
+}
+.icon {
+    width: 100%;
+    height: 100%;
+}
+#facebook {
+    height: 13%;
+
+}
+#instagram {
+    height: 13%;
+}
+#email {
+    height: 15%;
+}
+.contacto div {
+    position: relative;
+    display: inline-block;
+    top: -7px;
+    
+}
+/*Conóceme /*/
+
+
